@@ -11,13 +11,13 @@ function mondayWork (activity = "go to the office"){
 mondayWork("work from home")
 
 
-function wrapAdjective (wrap){
-  return function (special = "special"){
-    let string = `You are ${special}!`
-      return function (){
-        console.log(`${string} *${wrap}*`);
-      }
+function wrapAdjective (wrap = "*"){
+  return function (special = "a hard worker"){
+        console.log(`You are ${wrap}${special}${wrap}!`);
   }
 
 }
-console.log(wrapAdjective("a hard worker")()("%"));
+wrapAdjective()();
+
+
+
