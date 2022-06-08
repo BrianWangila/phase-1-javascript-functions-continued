@@ -17,7 +17,7 @@ function wrapAdjective (wrap = "*"){
   }
 
 }
-wrapAdjective()();
+
 
 
 
