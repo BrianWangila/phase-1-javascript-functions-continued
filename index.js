@@ -12,8 +12,8 @@ mondayWork("work from home")
 
 
 function wrapAdjective (wrap = "*"){
-  return function (special = "a hard worker"){
-        console.log(`You are ${wrap}${special}${wrap}!`);
+  return function (special = "special"){
+        return `You are ${wrap}${special}${wrap}!`;
   }
 
 }
